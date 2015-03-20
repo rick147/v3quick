@@ -18,6 +18,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine", "..\..\cocos2d-x
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsimulator", "..\..\cocos2d-x\tools\simulator\libsimulator\proj.win32\libsimulator.vcxproj", "{001B324A-BB91-4E83-875C-C92F75C40857}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quick_libs", "..\..\..\frameworks\quick\proj.win32\quick_libs.vcxproj", "{59411DD0-24F9-48F7-80EA-3F8000855168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -48,6 +50,10 @@ Global
 		{001B324A-BB91-4E83-875C-C92F75C40857}.Debug|Win32.Build.0 = Debug|Win32
 		{001B324A-BB91-4E83-875C-C92F75C40857}.Release|Win32.ActiveCfg = Release|Win32
 		{001B324A-BB91-4E83-875C-C92F75C40857}.Release|Win32.Build.0 = Release|Win32
+		{59411DD0-24F9-48F7-80EA-3F8000855168}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59411DD0-24F9-48F7-80EA-3F8000855168}.Debug|Win32.Build.0 = Debug|Win32
+		{59411DD0-24F9-48F7-80EA-3F8000855168}.Release|Win32.ActiveCfg = Release|Win32
+		{59411DD0-24F9-48F7-80EA-3F8000855168}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
