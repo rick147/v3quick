@@ -25,6 +25,7 @@ LOCAL_STATIC_LIBRARIES := cocos2d_lua_static
 LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
 
 # _COCOS_LIB_ANDROID_BEGIN
+LOCAL_STATIC_LIBRARIES += quick_libs_static
 # _COCOS_LIB_ANDROID_END
 
 include $(BUILD_SHARED_LIBRARY)
@@ -33,4 +34,5 @@ $(call import-module,scripting/lua-bindings/proj.android)
 $(call import-module,tools/simulator/libsimulator/proj.android)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
+$(call import-module,proj.android)
 # _COCOS_LIB_IMPORT_ANDROID_END
