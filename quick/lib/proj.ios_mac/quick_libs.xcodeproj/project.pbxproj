@@ -1398,6 +1398,7 @@
 		DABC98A51A81E08700BF5CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				EXECUTABLE_PREFIX = lib;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = quick_libs.pch;
@@ -1408,12 +1409,14 @@
 				PRODUCT_NAME = "quick_libs IOS";
 				SDKROOT = iphoneos8.1;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/curl/include/ios";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
 		DABC98A61A81E08700BF5CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				EXECUTABLE_PREFIX = lib;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = quick_libs.pch;
@@ -1424,6 +1427,7 @@
 				PRODUCT_NAME = "quick_libs IOS";
 				SDKROOT = iphoneos8.1;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/curl/include/ios";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
