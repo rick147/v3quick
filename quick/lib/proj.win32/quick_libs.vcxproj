@@ -71,7 +71,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;CC_USE_CURL=1;CC_LUA_ENGINE_ENABLED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src\extra;$(ProjectDir)..\src\extensions;$(ProjectDir)..\..\..\frameworks\cocos2d-x\cocos;$(ProjectDir)..\..\..\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\lua\lua;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\lua\tolua;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\glfw3\include\win32;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\win32-specific\zlib\include;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\win32-specific\gles\include\OGLES/;$(ProjectDir)..\..\..\frameworks\cocos2d-x\external\curl\include\win32;$(ProjectDir)..\..\..\frameworks\cocos2d-x\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
