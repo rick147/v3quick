@@ -140,9 +140,11 @@
                     "proj.win32/Debug",
                     "proj.win32/Release"
                 ],
-                "from": "quick/lib",
-                "to": "frameworks/quick",
+                "from": "cocos/quick_libs",
+                "to": "frameworks/cocos2d-x/cocos/quick_libs",
                 "exclude": [
+                    "proj.win32/Debug",
+                    "proj.win32/Release"
                 ]
             }
         ],

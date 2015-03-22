@@ -203,7 +203,7 @@ xcopy "$(ProjectDir)..\..\..\src" "$(ProjectDir)..\..\..\runtime\win32\src" /D /
     <Image Include="res\game.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\frameworks\quick\proj.win32\quick_libs.vcxproj">
+    <ProjectReference Include="..\..\..\frameworks\cocos2d-x\cocos\quick_libs\proj.win32\quick_libs.vcxproj">
       <Project>{59411DD0-24F9-48F7-80EA-3F8000855168}</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\cocos2d-x\cocos\2d\libcocos2d.vcxproj">

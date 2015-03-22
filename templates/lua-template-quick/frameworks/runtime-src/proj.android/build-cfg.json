@@ -4,7 +4,7 @@
         "../../cocos2d-x/cocos/",
         "../../cocos2d-x/external",
         "../../cocos2d-x/cocos/scripting",
-        "../../quick"
+        "../../cocos2d-x/cocos/quick_libs"
     ],
     "copy_resources": [
         {
