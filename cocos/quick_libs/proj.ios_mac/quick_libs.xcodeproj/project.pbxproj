@@ -1331,7 +1331,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../src/extensions $(SRCROOT)/../src/extra $(SRCROOT)/../../../frameworks/cocos2d-x/cocos $(SRCROOT)/../../../frameworks/cocos2d-x/cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../frameworks/cocos2d-x/extensions $(SRCROOT)/../../../frameworks/cocos2d-x/external $(SRCROOT)/../../../frameworks/cocos2d-x/external/lua/lua $(SRCROOT)/../../../frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../cocos $(SRCROOT)/../../../cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../extensions $(SRCROOT)/../../../external $(SRCROOT)/../../../external/lua/lua $(SRCROOT)/../../../external/lua/tolua";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../src/extensions $(SRCROOT)/../src/extra $(SRCROOT)/../../../cocos $(SRCROOT)/../../../cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../extensions $(SRCROOT)/../../../external $(SRCROOT)/../../../external/lua/lua $(SRCROOT)/../../../external/lua/tolua";
 				VALID_ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 			};
 			name = Debug;
@@ -1370,7 +1370,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../src/extensions $(SRCROOT)/../src/extra $(SRCROOT)/../../../frameworks/cocos2d-x/cocos $(SRCROOT)/../../../frameworks/cocos2d-x/cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../frameworks/cocos2d-x/extensions $(SRCROOT)/../../../frameworks/cocos2d-x/external $(SRCROOT)/../../../frameworks/cocos2d-x/external/lua/lua $(SRCROOT)/../../../frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../cocos $(SRCROOT)/../../../cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../extensions $(SRCROOT)/../../../external $(SRCROOT)/../../../external/lua/lua $(SRCROOT)/../../../external/lua/tolua";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../src/extensions $(SRCROOT)/../src/extra $(SRCROOT)/../../../cocos $(SRCROOT)/../../../cocos/scripting/lua-bindings/manual $(SRCROOT)/../../../extensions $(SRCROOT)/../../../external $(SRCROOT)/../../../external/lua/lua $(SRCROOT)/../../../external/lua/tolua";
 				VALID_ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 			};
 			name = Release;
