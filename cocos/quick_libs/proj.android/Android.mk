@@ -19,8 +19,10 @@ LOCAL_C_INCLUDES := $(LOCAL_EXPORT_C_INCLUDES) \
 
 LOCAL_STATIC_LIBRARIES := extra_static
 LOCAL_STATIC_LIBRARIES += quick_extensions_static
+LOCAL_STATIC_LIBRARIES += cocos2d_lua_static
 
 include $(BUILD_STATIC_LIBRARY)
 
 $(call import-module,src/extra)
 $(call import-module,src/extensions)
+$(call import-module,scripting/lua-bindings/proj.android)
