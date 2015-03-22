@@ -47,7 +47,11 @@
 		5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5200BEC91A53D9A500AC45E4 /* Security.framework */; };
 		521A8E7019F0C3D200D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */; };
 		521A8E7119F0C3D200D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */; };
-		87A2EC1E1AB34BEE00513747 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A2EC1D1AB34BEE00513747 /* Security.framework */; };
+		874A365D1ABF092D005B3752 /* libquick_libs MAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874A36581ABF0812005B3752 /* libquick_libs MAC.a */; };
+		874A36641ABF0D3F005B3752 /* libquick_libs IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874A365A1ABF0812005B3752 /* libquick_libs IOS.a */; };
+		874A36651ABF0D9F005B3752 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A2EC1D1AB34BEE00513747 /* Security.framework */; };
+		874A36671ABF0DF0005B3752 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874A36661ABF0DF0005B3752 /* SystemConfiguration.framework */; };
+		874A36691ABF0E31005B3752 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874A36681ABF0E31005B3752 /* SystemConfiguration.framework */; };
 		9F7214271A5C1E4C00DAED06 /* libluacocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7213E01A5C19ED00DAED06 /* libluacocos2d Mac.a */; };
 		9F7214281A5C1E5B00DAED06 /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7213E21A5C19ED00DAED06 /* libluacocos2d iOS.a */; };
 		9FB5D5F91A691342002361CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB5D5F81A691342002361CA /* libsqlite3.dylib */; };
@@ -97,6 +101,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "libcocos2d iOS";
+		};
+		874A36571ABF0812005B3752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A36521ABF0812005B3752 /* quick_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DABC966C1A81DF7F00BF5CC4;
+			remoteInfo = "quick_libs MAC";
+		};
+		874A36591ABF0812005B3752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A36521ABF0812005B3752 /* quick_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DABC98A71A81E08700BF5CC4;
+			remoteInfo = "quick_libs IOS";
+		};
+		874A365B1ABF0922005B3752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A36521ABF0812005B3752 /* quick_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DABC966B1A81DF7F00BF5CC4;
+			remoteInfo = "quick_libs MAC";
+		};
+		874A36621ABF0D37005B3752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A36521ABF0812005B3752 /* quick_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DABC98001A81E08700BF5CC4;
+			remoteInfo = "quick_libs IOS";
 		};
 		9F7213DF1A5C19ED00DAED06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -206,6 +238,9 @@
 		5200BEC91A53D9A500AC45E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		874A36521ABF0812005B3752 /* quick_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = quick_libs.xcodeproj; path = ../../../../../quick/lib/proj.ios_mac/quick_libs.xcodeproj; sourceTree = "<group>"; };
+		874A36661ABF0DF0005B3752 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		874A36681ABF0E31005B3752 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		87A2EC1D1AB34BEE00513747 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9FB5D5F81A691342002361CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9FB5D5FA1A6915F6002361CA /* libjs_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjs_static.a; path = ../../../../../external/spidermonkey/prebuilt/mac/libjs_static.a; sourceTree = "<group>"; };
@@ -248,7 +283,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A2EC1E1AB34BEE00513747 /* Security.framework in Frameworks */,
+				874A36671ABF0DF0005B3752 /* SystemConfiguration.framework in Frameworks */,
+				874A36651ABF0D9F005B3752 /* Security.framework in Frameworks */,
+				874A365D1ABF092D005B3752 /* libquick_libs MAC.a in Frameworks */,
 				9FB5D5F91A691342002361CA /* libsqlite3.dylib in Frameworks */,
 				9FD6FC0B1A5D27870028EDC6 /* libsimulator Mac.a in Frameworks */,
 				9F7214271A5C1E4C00DAED06 /* libluacocos2d Mac.a in Frameworks */,
@@ -270,10 +307,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874A36691ABF0E31005B3752 /* SystemConfiguration.framework in Frameworks */,
+				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
+				874A36641ABF0D3F005B3752 /* libquick_libs IOS.a in Frameworks */,
 				9FB5D60A1A6917D8002361CA /* libsqlite3.dylib in Frameworks */,
 				9FD6FC0C1A5D278E0028EDC6 /* libsimulator iOS.a in Frameworks */,
 				9F7214281A5C1E5B00DAED06 /* libluacocos2d iOS.a in Frameworks */,
-				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
 				15427CD3198F221400DC375D /* libcocos2d iOS.a in Frameworks */,
 				3EEEDB61197107C0006A9FF8 /* MediaPlayer.framework in Frameworks */,
 				D6B061351803AC000077942B /* CoreMotion.framework in Frameworks */,
@@ -358,6 +397,15 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		874A36531ABF0812005B3752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874A36581ABF0812005B3752 /* libquick_libs MAC.a */,
+				874A365A1ABF0812005B3752 /* libquick_libs IOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9F7213DB1A5C19EC00DAED06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +441,7 @@
 		F293B3BD15EB7BE500256477 = {
 			isa = PBXGroup;
 			children = (
+				874A36521ABF0812005B3752 /* quick_libs.xcodeproj */,
 				9FD6FC021A5D26580028EDC6 /* libsimulator.xcodeproj */,
 				C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */,
 				15A8A4031834BDA200142BE0 /* cocos2d_libs.xcodeproj */,
@@ -417,6 +466,8 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				874A36681ABF0E31005B3752 /* SystemConfiguration.framework */,
+				874A36661ABF0DF0005B3752 /* SystemConfiguration.framework */,
 				87A2EC1D1AB34BEE00513747 /* Security.framework */,
 				9FB5D60C1A69184C002361CA /* libjs_static.a */,
 				9FB5D6091A6917D8002361CA /* libsqlite3.dylib */,
@@ -480,6 +531,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				874A365C1ABF0922005B3752 /* PBXTargetDependency */,
 				9FF504D01A5EB19900AFDA55 /* PBXTargetDependency */,
 				9F7214221A5C1D3A00DAED06 /* PBXTargetDependency */,
 				C0A2F04118975FF80072A7AB /* PBXTargetDependency */,
@@ -500,6 +552,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				874A36631ABF0D37005B3752 /* PBXTargetDependency */,
 				9FF504CC1A5EB19500AFDA55 /* PBXTargetDependency */,
 				9F7214261A5C1D4200DAED06 /* PBXTargetDependency */,
 				15D1F3091994BBCA00302043 /* PBXTargetDependency */,
@@ -547,6 +600,10 @@
 					ProductGroup = 9FD6FC031A5D26580028EDC6 /* Products */;
 					ProjectRef = 9FD6FC021A5D26580028EDC6 /* libsimulator.xcodeproj */;
 				},
+				{
+					ProductGroup = 874A36531ABF0812005B3752 /* Products */;
+					ProjectRef = 874A36521ABF0812005B3752 /* quick_libs.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -569,6 +626,20 @@
 			fileType = archive.ar;
 			path = "libcocos2d iOS.a";
 			remoteRef = 15A8A4241834BDA200142BE0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		874A36581ABF0812005B3752 /* libquick_libs MAC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libquick_libs MAC.a";
+			remoteRef = 874A36571ABF0812005B3752 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		874A365A1ABF0812005B3752 /* libquick_libs IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libquick_libs IOS.a";
+			remoteRef = 874A36591ABF0812005B3752 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9F7213E01A5C19ED00DAED06 /* libluacocos2d Mac.a */ = {
@@ -676,6 +747,16 @@
 			isa = PBXTargetDependency;
 			name = "libcocos2d iOS";
 			targetProxy = 15D1F3081994BBCA00302043 /* PBXContainerItemProxy */;
+		};
+		874A365C1ABF0922005B3752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "quick_libs MAC";
+			targetProxy = 874A365B1ABF0922005B3752 /* PBXContainerItemProxy */;
+		};
+		874A36631ABF0D37005B3752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "quick_libs IOS";
+			targetProxy = 874A36621ABF0D37005B3752 /* PBXContainerItemProxy */;
 		};
 		9F7214221A5C1D3A00DAED06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

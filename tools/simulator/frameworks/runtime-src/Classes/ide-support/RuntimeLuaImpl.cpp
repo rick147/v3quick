@@ -334,6 +334,8 @@ void RuntimeLuaImpl::init()
     auto engine = LuaEngine::getInstance();
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_module_register(engine->getLuaStack()->getLuaState());
+    extern void package_quick_register();
+    package_quick_register();
     register_runtime_override_function(engine->getLuaStack()->getLuaState());
     engine->getLuaStack()->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
 }
