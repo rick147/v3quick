@@ -9,9 +9,6 @@
 // Lua
 #include "ide-support/RuntimeLuaImpl.h"
 
-// Js
-#include "ide-support/RuntimeJsImpl.h"
-
 
 using namespace CocosDenshion;
 
@@ -49,17 +46,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     auto runtimeEngine = RuntimeEngine::getInstance();
     runtimeEngine->setEventTrackingEnable(true);
     runtimeEngine->addRuntime(RuntimeLuaImpl::create(), kRuntimeEngineLua);
-    auto jsRuntime = RuntimeJsImpl::create();
-    runtimeEngine->addRuntime(jsRuntime, kRuntimeEngineJs);
     runtimeEngine->start();
     
-    // js need special debug port
-    if (runtimeEngine->getProjectConfig().getDebuggerType() != kCCRuntimeDebuggerNone)
-    {
-        jsRuntime->startWithDebugger();
-    }
-
-
     // Runtime end
     cocos2d::log("iShow!");
     return true;
