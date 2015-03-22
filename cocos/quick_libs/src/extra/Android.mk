@@ -54,14 +54,14 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
                            $(LOCAL_PATH)/luabinding
 
 LOCAL_C_INCLUDES := $(LOCAL_EXPORT_C_INCLUDES) \
-                    $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/cocos \
-                    $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/external/lua/luajit/include  \
-                    $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/external/lua/tolua \
-                    $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/external \
-                    $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/cocos/scripting/lua-bindings/manual
+                    $(LOCAL_PATH)/../../../../cocos \
+                    $(LOCAL_PATH)/../../../../external/lua/luajit/include  \
+                    $(LOCAL_PATH)/../../../../external/lua/tolua \
+                    $(LOCAL_PATH)/../../../../external \
+                    $(LOCAL_PATH)/../../../../cocos/scripting/lua-bindings/manual
 
 #filters
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../../frameworks/cocos2d-x/extensions
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../../extensions
 
 LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API -DCC_LUA_ENGINE_ENABLED=1 $(ANDROID_COCOS2D_BUILD_FLAGS) -std=c++11
 LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API -DCC_LUA_ENGINE_ENABLED=1
