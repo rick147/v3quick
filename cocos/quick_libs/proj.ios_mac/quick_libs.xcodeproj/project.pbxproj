@@ -1381,7 +1381,7 @@
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "quick_libs MAC";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/glfw3/include/mac $(SRCROOT)/../../../external/glfw3/include/mac";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../external/glfw3/include/mac";
 			};
 			name = Debug;
 		};
@@ -1391,7 +1391,7 @@
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "quick_libs MAC";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/glfw3/include/mac $(SRCROOT)/../../../external/glfw3/include/mac";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../external/glfw3/include/mac";
 			};
 			name = Release;
 		};
@@ -1408,7 +1408,7 @@
 				);
 				PRODUCT_NAME = "quick_libs IOS";
 				SDKROOT = iphoneos8.1;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/curl/include/ios";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../external/curl/include/ios";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
@@ -1426,7 +1426,7 @@
 				);
 				PRODUCT_NAME = "quick_libs IOS";
 				SDKROOT = iphoneos8.1;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../frameworks/cocos2d-x/external/curl/include/ios";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../external/curl/include/ios";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
