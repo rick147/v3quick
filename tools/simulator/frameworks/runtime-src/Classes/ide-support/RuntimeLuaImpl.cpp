@@ -146,7 +146,9 @@ int lua_cocos2dx_runtime_addSearchPath(lua_State* tolua_S)
             // add project path to search path
             cobj->addSearchPath(g_projectPath + arg0, arg1);
 #endif
-        }
+        } else {
+			cobj->addSearchPath(arg0, arg1);
+		}
         return 0;
     }
     CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "addSearchPath",argc, 1);
