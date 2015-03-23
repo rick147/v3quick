@@ -179,11 +179,11 @@ printInfo(string.format("# display.c_top                = %0.2f", display.c_top)
 printInfo(string.format("# display.c_bottom             = %0.2f", display.c_bottom))
 printInfo("#")
 
-display.COLOR_WHITE = cc.c4b(255, 255, 255, 255)
-display.COLOR_BLACK = cc.c4b(0, 0, 0, 255)
-display.COLOR_RED   = cc.c4b(255, 0, 0, 255)
-display.COLOR_GREEN = cc.c4b(0, 255, 0, 255)
-display.COLOR_BLUE  = cc.c4b(0, 0, 255, 255)
+display.COLOR_WHITE = cc.c3b(255, 255, 255)
+display.COLOR_BLACK = cc.c3b(0, 0, 0)
+display.COLOR_RED   = cc.c3b(255, 0, 0)
+display.COLOR_GREEN = cc.c3b(0, 255, 0)
+display.COLOR_BLUE  = cc.c3b(0, 0, 255)
 
 display.AUTO_SIZE      = 0
 display.FIXED_SIZE     = 1
@@ -1299,6 +1299,8 @@ function display.newTTFLabel(params)
     local textValign = params.valign or cc.VERTICAL_TEXT_ALIGNMENT_TOP
     local x, y       = params.x, params.y
     local dimensions = params.dimensions or cc.size(0, 0)
+
+    color.a = color.a or 255
 
     assert(type(size) == "number",
            "[framework.display] newTTFLabel() invalid params.size")
