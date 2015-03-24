@@ -62,6 +62,7 @@ COCOS_TEMPLATES_ROOT = 'COCOS_TEMPLATES_ROOT'
 NDK_ROOT = 'NDK_ROOT'
 ANDROID_SDK_ROOT = 'ANDROID_SDK_ROOT'
 ANT_ROOT = 'ANT_ROOT'
+QUICK_V3_ROOT = 'QUICK_V3_ROOT'
 
 
 def _check_python_version():
@@ -483,6 +484,29 @@ class SetEnvVar(object):
 
             self._force_update_env(COCOS_CONSOLE_ROOT, cocos_consle_root)
 
+    def set_quick_root(self):
+        print("->Check environment variable %s" % QUICK_V3_ROOT)
+        quick_v3_root = self.current_absolute_path
+        old_dir = self._find_environment_variable(QUICK_V3_ROOT)
+        if old_dir is None:
+            # add environment variable
+            # if self._isWindows():
+            #     self.set_windows_path(quick_v3_root)
+
+            self._set_environment_variable(
+                QUICK_V3_ROOT, quick_v3_root)
+        else:
+            if old_dir == quick_v3_root:
+                # is same with before, nothing to do
+                return
+
+            # update the environment variable
+            # if self._isWindows():
+            #     self.remove_dir_from_win_path(old_dir)
+            #     self.set_windows_path(quick_v3_root)
+
+            self._force_update_env(QUICK_V3_ROOT, quick_v3_root)
+
     def set_templates_root(self):
         print("->Check environment variable %s" % COCOS_TEMPLATES_ROOT)
         cocos_templates_root = os.path.join(self.current_absolute_path, 'templates')
@@ -663,6 +687,7 @@ class SetEnvVar(object):
         self.file_used_for_setup = self._get_filepath_for_setup()
 
         self.set_console_root()
+        self.set_quick_root()
         self.set_templates_root()
 
         if self._isWindows():
