@@ -1,7 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-QUICK_V3_ROOT="$DIR/../../.."
 echo $QUICK_V3_ROOT
 COCOS_SCRIPT_PATH="$QUICK_V3_ROOT/cocos/scripting/lua-bindings/script"
 QUICK_FRAME_PATH="$QUICK_V3_ROOT/quick"
