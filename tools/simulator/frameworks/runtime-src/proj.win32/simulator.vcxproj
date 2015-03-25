@@ -197,6 +197,9 @@ xcopy /Y /Q "$(ProjectDir)..\Classes\lang" "$(ProjectDir)..\..\..\runtime\win32\
     <Image Include="res\game.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\cocos\quick_libs\proj.win32\quick_libs.vcxproj">
+      <Project>{59411dd0-24f9-48f7-80ea-3f8000855168}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\..\cocos\scripting\lua-bindings\proj.win32\libluacocos2d.vcxproj">
       <Project>{9f2d6ce6-c893-4400-b50c-6db70cc2562f}</Project>
     </ProjectReference>
