@@ -216,8 +216,6 @@ void RuntimeEngine::startScript(const std::string &args)
     {
         _runtime->startScript(args);
     }
-
-    trackLaunchEvent();
 }
 
 void RuntimeEngine::start()
@@ -259,6 +257,8 @@ void RuntimeEngine::start()
     {
         startNetwork();
     }
+    
+    trackLaunchEvent();
 }
 
 void RuntimeEngine::end()
@@ -357,18 +357,16 @@ void RuntimeEngine::trackEvent(const std::string &eventName)
     const char *platform = "UNKNOWN";
 #endif
 
-    char cidBuf[64] = {0};
     auto guid = player::DeviceEx::getInstance()->getUserGUID();
-    snprintf(cidBuf, sizeof(cidBuf), "%x", XXH32(guid.c_str(), (int)guid.length(), 0));
     auto request = extra::HTTPRequest::createWithUrl(NULL,
                                                      "http://www.google-analytics.com/collect",
                                                      kCCHTTPRequestMethodPOST);
     request->addPOSTValue("v", "1");
-    request->addPOSTValue("tid", "UA-58200293-1");
-    request->addPOSTValue("cid", cidBuf);
+    request->addPOSTValue("tid", "UA-55061270-1");
+    request->addPOSTValue("cid", guid.c_str());
     request->addPOSTValue("t", "event");
 
-    request->addPOSTValue("an", "simulator");
+    request->addPOSTValue("an", "player");
     request->addPOSTValue("av", cocos2dVersion());
 
     request->addPOSTValue("ec", platform);
@@ -381,5 +379,5 @@ void RuntimeEngine::trackEvent(const std::string &eventName)
 
 void RuntimeEngine::trackLaunchEvent()
 {
-    trackEvent(_launchEvent);
+    trackEvent("launch");
 }
