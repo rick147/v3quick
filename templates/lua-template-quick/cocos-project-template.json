@@ -196,5 +196,24 @@
                 "frameworks/runtime-src/proj.ios_mac/ios/Info.plist"
             ]
         }
+    },
+    "change_orientation": {
+        "modify_files":[
+            {
+                "file_path": "config.json",
+                "pattern": "\"isLandscape\": true,",
+                "replace_string": "\"isLandscape\": false,"
+            },
+            {
+                "file_path": "frameworks/runtime-src/proj.ios_mac/ios/Info.plist",
+                "pattern": "<string>UIInterfaceOrientationLandscapeRight</string>",
+                "replace_string": "<string>UIInterfaceOrientationPortrait</string>"
+            },
+            {
+                "file_path": "frameworks/runtime-src/proj.ios_mac/ios/Info.plist",
+                "pattern": "<string>UIInterfaceOrientationLandscapeLeft</string>",
+                "replace_string": "<string>UIInterfaceOrientationPortraitUpsideDown</string>"
+            }
+         ]
     }
 }
