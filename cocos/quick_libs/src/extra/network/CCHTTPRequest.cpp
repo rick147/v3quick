@@ -72,7 +72,8 @@ bool HTTPRequest::initWithUrl(const char *url, int method)
     }
     
     ++s_id;
-    // CCLOG("HTTPRequest[0x%04x] - create request with url: %s", s_id, url);
+    m_id = s_id;
+    CCLOG("HTTPRequest[0x%04x] - create request with url: %s", m_id, url);
     return true;
 }
 
@@ -83,7 +84,7 @@ HTTPRequest::~HTTPRequest(void)
     {
         LuaEngine::getInstance()->removeScriptHandler(m_listener);
     }
-    // CCLOG("HTTPRequest[0x%04x] - request removed", s_id);
+    CCLOG("HTTPRequest[0x%04x] - request removed", m_id);
 }
 
 void HTTPRequest::setRequestUrl(const char *url)
@@ -238,9 +239,8 @@ bool HTTPRequest::start(void)
     pthread_detach(m_thread);
 #endif
 
-    
-    Director::getInstance()->getScheduler()->scheduleUpdateForTarget(this, 0, false);
-    // CCLOG("HTTPRequest[0x%04x] - request start", s_id);
+    Director::getInstance()->getScheduler()->scheduleUpdate(this, 0, false);
+//    CCLOG("HTTPRequest[0x%04x] - request start", m_id);
     return true;
 }
 
@@ -378,17 +378,17 @@ void HTTPRequest::update(float dt)
     Director::getInstance()->getScheduler()->unscheduleAllForTarget(this);
     if (m_curlState != kCCHTTPRequestCURLStateIdle)
     {
-        Director::getInstance()->getScheduler()->scheduleSelector(schedule_selector(HTTPRequest::checkCURLState), this, 0, false);
+        Director::getInstance()->getScheduler()->schedule(schedule_selector(HTTPRequest::checkCURLState), this, 0, false);
     }
 
     if (m_state == kCCHTTPRequestStateCompleted)
     {
-        // CCLOG("HTTPRequest[0x%04x] - request completed", s_id);
+//        CCLOG("HTTPRequest[0x%04x] - request completed", m_id);
         if (m_delegate) m_delegate->requestFinished(this);
     }
     else
     {
-        // CCLOG("HTTPRequest[0x%04x] - request failed", s_id);
+//        CCLOG("HTTPRequest[0x%04x] - request failed", m_id);
         if (m_delegate) m_delegate->requestFailed(this);
     }
 

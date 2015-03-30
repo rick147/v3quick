@@ -164,6 +164,7 @@ private:
     , m_dlnow(0)
     , m_ultotal(0)
     , m_ulnow(0)
+    , m_id(0)
     {
     }
     bool initWithDelegate(HTTPRequestDelegate* delegate, const char *url, int method);
@@ -178,6 +179,7 @@ private:
     };
 
     static unsigned int s_id;
+    unsigned int m_id;
     string m_url;
     HTTPRequestDelegate* m_delegate;
     int m_listener;
