@@ -28,6 +28,8 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.egl.EGLDisplay;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
+import org.cocos2dx.utils.PSNative;
+import org.cocos2dx.utils.PSNetwork;
 import com.chukong.cocosplay.client.CocosPlayClient;
 
 import android.app.Activity;
@@ -236,6 +238,9 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
         if(mWebViewHelper == null){
             mWebViewHelper = new Cocos2dxWebViewHelper(mFrameLayout);
         }
+        
+        PSNative.init(this);
+        PSNetwork.init(this);
     }
 
     //native method,call GLViewImpl::getGLContextAttrs() to get the OpenGL ES context attributions
