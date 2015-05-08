@@ -73,6 +73,9 @@
     <Filter Include="extensions\cjson">
       <UniqueIdentifier>{c6b6afa5-85f5-463c-af54-3c26df8d9685}</UniqueIdentifier>
     </Filter>
+    <Filter Include="quick">
+      <UniqueIdentifier>{d89fd397-22e8-46d7-ab71-2a59bf86c626}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -221,6 +224,21 @@
     </ClCompile>
     <ClCompile Include="..\src\extensions\cjson\strbuf.c">
       <Filter>extensions\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\lua\quick\lua_cocos2dx_quick_manual.cpp">
+      <Filter>quick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\lua\quick\LuaEventNode.cpp">
+      <Filter>quick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\lua\quick\LuaNodeManager.cpp">
+      <Filter>quick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\lua\quick\LuaTouchEventManager.cpp">
+      <Filter>quick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\lua\quick\LuaTouchTargetNode.cpp">
+      <Filter>quick</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -472,6 +490,21 @@
     </ClInclude>
     <ClInclude Include="..\src\extensions\cjson\strbuf.h">
       <Filter>extensions\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\lua\quick\lua_cocos2dx_quick_manual.hpp">
+      <Filter>quick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\lua\quick\LuaEventNode.h">
+      <Filter>quick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\lua\quick\LuaNodeManager.h">
+      <Filter>quick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\lua\quick\LuaTouchEventManager.h">
+      <Filter>quick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\lua\quick\LuaTouchTargetNode.h">
+      <Filter>quick</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
