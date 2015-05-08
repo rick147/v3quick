@@ -35,6 +35,7 @@ using namespace std;
 
 #define kProjectConfigConsolePort   6010
 #define kProjectConfigUploadPort    6020
+#define kProjectConfigDebugPort     5086
 
 class ProjectConfig
 {

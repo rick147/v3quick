@@ -216,6 +216,8 @@ void RuntimeEngine::startScript(const std::string &args)
     {
         _runtime->startScript(args);
     }
+
+    trackLaunchEvent();
 }
 
 void RuntimeEngine::start()
@@ -251,14 +253,12 @@ void RuntimeEngine::start()
     if (_project.getDebuggerType() == kCCRuntimeDebuggerNone)
     {
         setupRuntime();
-        startScript(_project.getScriptFileRealPath());
+        startScript("");
     }
     else
     {
         startNetwork();
     }
-    
-    trackLaunchEvent();
 }
 
 void RuntimeEngine::end()
@@ -357,7 +357,9 @@ void RuntimeEngine::trackEvent(const std::string &eventName)
     const char *platform = "UNKNOWN";
 #endif
 
+    char cidBuf[64] = {0};
     auto guid = player::DeviceEx::getInstance()->getUserGUID();
+    snprintf(cidBuf, sizeof(cidBuf), "%x", XXH32(guid.c_str(), (int)guid.length(), 0));
     auto request = extra::HTTPRequest::createWithUrl(NULL,
                                                      "http://www.google-analytics.com/collect",
                                                      kCCHTTPRequestMethodPOST);
@@ -379,5 +381,5 @@ void RuntimeEngine::trackEvent(const std::string &eventName)
 
 void RuntimeEngine::trackLaunchEvent()
 {
-    trackEvent("launch");
+    trackEvent(_launchEvent);
 }

@@ -687,6 +687,7 @@
 				9FF504BA1A5EA75D00AFDA55 /* PlayerServiceProtocol.cpp in Sources */,
 				9FD6FC6E1A5D2A380028EDC6 /* PlayerTaskServiceMac.mm in Sources */,
 				9FB638A01A635BA300AAEC43 /* ConsoleCommand.cpp in Sources */,
+				9FD6FC321A5D281D0028EDC6 /* CCHTTPRequest.cpp in Sources */,
 				9FB638871A635BA300AAEC43 /* common.cc in Sources */,
 				9FB638681A635BA300AAEC43 /* generated_message_util.cc in Sources */,
 				9FB6386F1A635BA300AAEC43 /* zero_copy_stream.cc in Sources */,
