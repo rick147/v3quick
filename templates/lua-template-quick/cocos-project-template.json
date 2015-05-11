@@ -202,6 +202,7 @@
                 "pattern": "#define CC_CODE_IDE_DEBUG_SUPPORT 1",
                 "replace_string": "#define CC_CODE_IDE_DEBUG_SUPPORT 0"
             }
+        ]
     },
     "change_orientation": {
         "modify_files":[
