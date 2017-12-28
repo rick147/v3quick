@@ -557,6 +557,52 @@ tolua_lerror:
     return 0;
 }
 
+int lua_cocos2dx_ActionTimeline_play(lua_State* L)
+{
+    int argc = 0;
+    cocostudio::timeline::ActionTimeline* cobj = nullptr;
+    bool ok  = true;
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+    
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(L,1,"ccs.ActionTimeline",0,&tolua_err)) goto tolua_lerror;
+#endif
+    cobj = (cocostudio::timeline::ActionTimeline*)tolua_tousertype(L,1,0);
+#if COCOS2D_DEBUG >= 1
+    if (!cobj)
+    {
+        tolua_error(L,"invalid 'cobj' in function 'lua_cocos2dx_ActionTimeline_play'", nullptr);
+        return 0;
+    }
+#endif
+    argc = lua_gettop(L)-1;
+    do{
+        if (argc == 2) {
+            std::string arg0;
+            ok &= luaval_to_std_string(L, 2, &arg0, "ccs.ActionTimeline:play");
+            
+            if (!ok) { break; }
+            bool arg1;
+            ok &= luaval_to_boolean(L, 3,&arg1, "ccs.ActionTimeline:play");
+            
+            if (!ok) { break; }
+            cobj->play(arg0, arg1);
+            return 0;
+        }
+    }while(0);
+    luaL_error(L, "%s has wrong number of arguments: %d, was expecting %d \n",  "ccs.ActionTimeline:play",argc, 2);
+    return 0;
+    
+#if COCOS2D_DEBUG >= 1
+tolua_lerror:
+    tolua_error(L,"#ferror in function 'lua_cocos2dx_ActionTimeline_play'.",&tolua_err);
+#endif
+    
+    return 0;
+}
+
 static void extendActionTimeline(lua_State* L)
 {
     lua_pushstring(L, "ccs.ActionTimeline");
@@ -565,6 +611,7 @@ static void extendActionTimeline(lua_State* L)
     {
         tolua_function(L, "setFrameEventCallFunc", lua_cocos2dx_ActionTimeline_setFrameEventCallFunc);
         tolua_function(L, "setLastFrameCallFunc", lua_cocos2dx_ActionTimeline_setLastFrameCallFunc);
+        tolua_function(L, "play", lua_cocos2dx_ActionTimeline_play);
     }
     lua_pop(L, 1);
 }
