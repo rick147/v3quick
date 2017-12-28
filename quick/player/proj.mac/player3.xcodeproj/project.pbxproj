@@ -910,13 +910,13 @@
 			isa = PBXGroup;
 			children = (
 				A8BC9D301FF4EEAA005C9EB3 /* CustomRootNode.cpp */,
-				A8BC9D311FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.hpp */,
 				A8BC9D321FF4EEAA005C9EB3 /* CustomRootNode.h */,
-				A8BC9D331FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.hpp */,
 				A8BC9D341FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp */,
-				A8BC9D351FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp */,
-				A8BC9D361FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp */,
 				A8BC9D371FF4EEAA005C9EB3 /* CustomRootNodeReader.h */,
+				A8BC9D351FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp */,
+				A8BC9D311FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.hpp */,
+				A8BC9D361FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp */,
+				A8BC9D331FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.hpp */,
 			);
 			name = CustomRootNode;
 			path = ../Classes/CustomRootNode;
