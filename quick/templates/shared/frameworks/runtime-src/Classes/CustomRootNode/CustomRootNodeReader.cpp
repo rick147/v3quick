@@ -1,7 +1,7 @@
 #include "CustomRootNodeReader.h"
 #include "CustomRootNode.h"
-#include "2d\CCNode.h"
-#include "cocostudio\ActionTimeline\CSLoader.h"
+#include "CCNode.h"
+#include "cocostudio/ActionTimeline/CSLoader.h"
 
 cocos2d::Node* CustomRootNodeReader::createNodeWithFlatBuffers(const flatbuffers::Table* nodeOptions)
 {
