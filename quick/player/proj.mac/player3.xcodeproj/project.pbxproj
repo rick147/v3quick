@@ -97,6 +97,10 @@
 		9FD01B2919F8C6A3005E0C49 /* PlayerMessageBoxServiceMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FD01B2019F8C6A3005E0C49 /* PlayerMessageBoxServiceMac.mm */; };
 		9FD01B2A19F8C6A3005E0C49 /* PlayerTaskServiceMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FD01B2219F8C6A3005E0C49 /* PlayerTaskServiceMac.mm */; };
 		9FD01B2D19F8C6BA005E0C49 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FD01B2C19F8C6BA005E0C49 /* AppController.mm */; };
+		A8BC9D3A1FF4EEAA005C9EB3 /* CustomRootNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BC9D301FF4EEAA005C9EB3 /* CustomRootNode.cpp */; };
+		A8BC9D3B1FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BC9D341FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp */; };
+		A8BC9D3C1FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BC9D351FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp */; };
+		A8BC9D3D1FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BC9D361FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp */; };
 		C00FD4931938512100C6382D /* Landscape_png.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C00FD48A1938512100C6382D /* Landscape_png.cpp */; };
 		C00FD4951938512100C6382D /* PlayDisable_png.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C00FD48B1938512100C6382D /* PlayDisable_png.cpp */; };
 		C00FD4971938512100C6382D /* PlayEnable_png.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C00FD48C1938512100C6382D /* PlayEnable_png.cpp */; };
@@ -390,6 +394,14 @@
 		9FD01B2219F8C6A3005E0C49 /* PlayerTaskServiceMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerTaskServiceMac.mm; sourceTree = "<group>"; };
 		9FD01B2B19F8C6BA005E0C49 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		9FD01B2C19F8C6BA005E0C49 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		A8BC9D301FF4EEAA005C9EB3 /* CustomRootNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomRootNode.cpp; sourceTree = "<group>"; };
+		A8BC9D311FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_customclass_auto.hpp; sourceTree = "<group>"; };
+		A8BC9D321FF4EEAA005C9EB3 /* CustomRootNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRootNode.h; sourceTree = "<group>"; };
+		A8BC9D331FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_customclass_manual.hpp; sourceTree = "<group>"; };
+		A8BC9D341FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomRootNodeReader.cpp; sourceTree = "<group>"; };
+		A8BC9D351FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_customclass_auto.cpp; sourceTree = "<group>"; };
+		A8BC9D361FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_customclass_manual.cpp; sourceTree = "<group>"; };
+		A8BC9D371FF4EEAA005C9EB3 /* CustomRootNodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRootNodeReader.h; sourceTree = "<group>"; };
 		C00FD48A1938512100C6382D /* Landscape_png.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Landscape_png.cpp; sourceTree = "<group>"; };
 		C00FD48B1938512100C6382D /* PlayDisable_png.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayDisable_png.cpp; sourceTree = "<group>"; };
 		C00FD48C1938512100C6382D /* PlayEnable_png.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayEnable_png.cpp; sourceTree = "<group>"; };
@@ -894,6 +906,22 @@
 			name = player;
 			sourceTree = "<group>";
 		};
+		A8BC9D2F1FF4EEAA005C9EB3 /* CustomRootNode */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC9D301FF4EEAA005C9EB3 /* CustomRootNode.cpp */,
+				A8BC9D311FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.hpp */,
+				A8BC9D321FF4EEAA005C9EB3 /* CustomRootNode.h */,
+				A8BC9D331FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.hpp */,
+				A8BC9D341FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp */,
+				A8BC9D351FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp */,
+				A8BC9D361FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp */,
+				A8BC9D371FF4EEAA005C9EB3 /* CustomRootNodeReader.h */,
+			);
+			name = CustomRootNode;
+			path = ../Classes/CustomRootNode;
+			sourceTree = "<group>";
+		};
 		C00FD4891938512100C6382D /* runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -980,6 +1008,7 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A8BC9D2F1FF4EEAA005C9EB3 /* CustomRootNode */,
 				8704AEC11A6C1B6000B9F882 /* UncaughtExceptionHandler.h */,
 				9F7287FE1A24957700EE0234 /* quick-src */,
 				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
@@ -1165,13 +1194,17 @@
 				9FD0193519F8C4D4005E0C49 /* PlayerUtils.cpp in Sources */,
 				9F72898A1A24957700EE0234 /* lua_cjson.c in Sources */,
 				49C655D01A3692EF00603AF5 /* lua_cocos2dx_extension_nanovg_auto.cpp in Sources */,
+				A8BC9D3C1FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_auto.cpp in Sources */,
 				9F72893F1A24957700EE0234 /* CCSharpenFilter.cpp in Sources */,
 				C00FD49B1938512100C6382D /* Runtime.cpp in Sources */,
+				A8BC9D3B1FF4EEAA005C9EB3 /* CustomRootNodeReader.cpp in Sources */,
 				9F7289631A24957700EE0234 /* HelperFunc_luabinding.cpp in Sources */,
 				9F72892C1A24957700EE0234 /* libbase64.c in Sources */,
+				A8BC9D3D1FF4EEAA005C9EB3 /* lua_cocos2dx_customclass_manual.cpp in Sources */,
 				9FD01B1219F8C69C005E0C49 /* ConsoleWindowController.m in Sources */,
 				9F7289661A24957700EE0234 /* CCHTTPRequest.cpp in Sources */,
 				9F72892D1A24957700EE0234 /* CCCrypto.cpp in Sources */,
+				A8BC9D3A1FF4EEAA005C9EB3 /* CustomRootNode.cpp in Sources */,
 				87FD37D41A469FB700DFFB6F /* ConsoleCommand.cpp in Sources */,
 				9FD01B2A19F8C6A3005E0C49 /* PlayerTaskServiceMac.mm in Sources */,
 				C0619CD81896894800872C26 /* Runtime_ios-mac.mm in Sources */,

@@ -16,6 +16,9 @@
 #include "lua_extensions/lua_extensions_more.h"
 #include "PlayerProtocol.h"
 
+#include "lua_cocos2dx_customclass_auto.hpp"
+#include "lua_cocos2dx_customclass_manual.hpp"
+
 using namespace CocosDenshion;
 
 USING_NS_CC;
@@ -86,6 +89,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_State* L = engine->getLuaStack()->getLuaState();
     lua_module_register(L);
+    
+    register_all_CustomNode(L);
+    register_all_CustomNode_manual(L);
 
     // If you want to use Quick-Cocos2d-X, please uncomment below code
     quick_module_register(L);
